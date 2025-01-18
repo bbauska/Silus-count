@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;  /* 100vh */
+  height: 100vh;  /* 100vh */
 }
   
 #clicker {
@@ -107,7 +107,7 @@ h4 {
     transform: translateY(-100%) rotate(0);
   }
   100% {
-    transform: translateY(100vh) rotate(180deg);
+    transform: translateY(100vh) rotate(360deg);  /* 180deg */
   }
 }
 <!-- shadow/confetti -->
