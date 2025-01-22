@@ -49,17 +49,13 @@
     <script src="./js/scripts.js"></script>
   
 <script>
-var canvas = document.getElementById('back');
+      <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        new Snowflakes({
+            wind: false,
+            rotation: false
+        });
+    </script>
   
-<!-- you should  only initialize a canvas once, so save this function
- we'll save it to the canvas itself for the purpose of this demo -->
-  
-canvas.confetti = .back-confetti || confetti.create(back, { resize: true });
-
-.back-confetti({
-  spread: 70,
-  origin: { y: 1.2 }
-});
-</script>
 </body>
 </html>
