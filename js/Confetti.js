@@ -1,4 +1,4 @@
-const confettiContainer = document.querySelector('#confetti-Container');
+const confettiContainer = document.querySelector('#confetti-container');
 const showConfetti = () => {
   const confetti = document.createElement('div');
   confetti.textContent = '🥩';
