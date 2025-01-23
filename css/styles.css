@@ -1,30 +1,51 @@
-/* styles.css in Silus-count - silus-counter.bauska.org */
+/* styles.css in wip-silus-count of wip.bauska.org */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .back {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 125%;
   background-color: rgba(255, 0, 0, .7);  /* 65, 105, 224 .7 */
   border-radius: 10px;
   box-shadow: 0 0 8px 0 rgb(3, 75, 85);
-  margin-top: 100px;
+  margin-top: 100px;  /* 100px */
 }
-
+.back2 {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(65, 105, 224, .7);  /* 255, 0, 0, .7 & 65, 105, 224 .7 */
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgb(3, 75, 85);
+  margin-top: 100px;  /* 100px */
+}
+.back3 {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-direction: column;
+  width: 20%;
+  background-color: rgba(165, 5, 224, .7);  /* 255, 0, 0, .7 & 65, 105, 224 .7 */
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgb(3, 75, 85);
+  margin-top: 100px;  /* 100px */
+}
+  
 #clicker {
-  width: 200px;
-  height: 50px;
+  width: 200px;  /* 200px */
+  height: 50px;  /* 50px */
   border-radius: 10px;
   box-shadow: 0 0 8px 0 rgb(255, 255, 185);  /* 3, 75, 185 */
   background-color: rgba(10, 4, 90, 0.6);
   color: rgb(255, 255, 255);
-  margin-bottom: 100px;
+  margin-bottom: 50px; /* 100px */
   transition: 2s;
 }
 #clicker:hover {
@@ -32,6 +53,37 @@ body {
   animation-duration: 60s;
 }
 
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 64px;  /* 64px; */
+  letter-spacing: 0.1em;
+}
+h2 {
+  font-size: 32px;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+h3 {
+  font-size: 26px;
+  justify-content; center;
+  background-color: darkgreen;
+  color: rgb(200,200,200);
+}
+h4 {
+  color: darkgreen;
+  font-size: 14px;
+}
+
+@keyframes grow {
+  0% {transform: scale(1);}
+  25% {transform: scale(1.4);}
+  50% {transform: scale(1);}
+  75% {transform: scale(1.4);}
+  100% {transform: scale(1);}
+}
+
+<!-- confetti-container & more -->
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 #confetti-container {
   position: absolute;
   top: 0;
@@ -42,24 +94,6 @@ body {
   justify-content: center;
   height: 100vh;
 }
-
-h1 {
-  color: rgb(255, 255, 255);
-  font-size: 184px;
-  letter-spacing: 0.1em;
-}
-h2 {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  letter-spacing: 0.1em;
-}
-h3 {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  background-color: #06302b
-}
-
 .card {
   background-color: #fff;
   max-width: 700px;
@@ -73,25 +107,28 @@ h3 {
   margin: 0;
   padding: 10px;
 }
-
 .confetti {
   position: absolute;
   top: 0;
   font-size: 1.6rem;
   animation: confetti-fall linear 5s infinite;
 }
+
 @keyframes confetti-fall {
   0% {
     transform: translateY(-100%) rotate(0);
   }
   100% {
-    transform: translateY(100vh) rotate(360deg);  /* 180deg */
+    transform: translateY(100vh) rotate(180deg);
   }
-
-@keyframes grow {
-  0% {transform: scale(1);}
-  25% {transform: scale(1.4);}
-  50% {transform: scale(1);}
-  75% {transform: scale(1.4);}
-  100% {transform: scale(1);}
+}
+<!-- shadow/confetti -->
+button {
+  margin-bottom: 10px;
+  display: block;
+}
+canvas {
+  width: 500px;
+  height: 300px;
+  border: 1px solid blue;
 }
