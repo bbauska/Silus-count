@@ -9,9 +9,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 125%;
+  width: 175%;  /* 125%; */
   background-color: rgba(255, 0, 0, .7);  /* 65, 105, 224 .7 */
-  border-radius: 10px;
+  border-radius: 20px;  /* 10px; */
   box-shadow: 0 0 8px 0 rgb(3, 75, 85);
   margin-top: 100px;  /* 100px */
 }
@@ -96,7 +96,7 @@ h4 {
 }
 .card {
   background-color: #fff;
-  max-width: 700px;
+  max-width: 700px;  /* 700px; */
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -110,8 +110,8 @@ h4 {
 .confetti {
   position: absolute;
   top: 0;
-  font-size: 1.6rem;
-  animation: confetti-fall linear 5s infinite;
+  font-size: 1.2rem;  /* 1.6rem; */
+  animation: confetti-fall linear 15s infinite;  /* 5s */
 }
 
 @keyframes confetti-fall {
@@ -119,7 +119,7 @@ h4 {
     transform: translateY(-100%) rotate(0);
   }
   100% {
-    transform: translateY(100vh) rotate(180deg);
+    transform: translateY(100vh) rotate(360deg);  /* 180deg */
   }
 }
 <!-- shadow/confetti -->
@@ -128,7 +128,7 @@ button {
   display: block;
 }
 canvas {
-  width: 500px;
+  width: 700px;  /* 500px; */
   height: 300px;
   border: 1px solid blue;
 }
