@@ -10,15 +10,3 @@ const showConfetti = () => {
     confetti.remove();
   }, 5000);  /* 5000 */
 };
-
-setInterval(() => {
-  showConfetti();
-}, 100);  /* 400 */
-
-const jsConfetti = new JSConfetti();
-
-setInterval(() => {
-  jsConfetti.addConfetti({
-    emojis: ['🥩']
-  })
-}, 2500)
