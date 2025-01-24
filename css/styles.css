@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+<!-- class -->
 .back {
   display: flex;
   justify-content: center;
@@ -14,31 +15,8 @@ body {
   border-radius: 20px;  /* 10px; */
   box-shadow: 0 0 8px 0 rgb(3, 75, 85);
   margin-top: 100px;  /* 100px */
-  margin-right: 25%;  /* was blank */
 }
-.back2 {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  flex-direction: column;
-  width: 100%;
-  background-color: rgba(65, 105, 224, .7);  /* 255, 0, 0, .7 & 65, 105, 224 .7 */
-  border-radius: 10px;
-  box-shadow: 0 0 8px 0 rgb(3, 75, 85);
-  margin-top: 100px;  /* 100px */
-}
-.back3 {
-  display: flex;
-  justify-content: right;
-  align-items: right;
-  flex-direction: column;
-  width: 20%;
-  background-color: rgba(165, 5, 224, .7);  /* 255, 0, 0, .7 & 65, 105, 224 .7 */
-  border-radius: 10px;
-  box-shadow: 0 0 8px 0 rgb(3, 75, 85);
-  margin-top: 100px;  /* 100px */
-}
-  
+<!-- id -->
 #clicker {
   width: 200px;  /* 200px */
   height: 50px;  /* 50px */
@@ -85,16 +63,20 @@ h4 {
 
 <!-- confetti-container & more -->
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+<!-- id's -->
 #confetti-container {
   position: absolute;
   top: 0;
   left: 0;
+  right: 25%;  /* added */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+<!-- classes -->
 .card {
   background-color: #fff;
   max-width: 700px;  /* 700px; */
@@ -108,6 +90,7 @@ h4 {
   margin: 0;
   padding: 10px;
 }
+
 .confetti {
   position: absolute;
   top: 0;
