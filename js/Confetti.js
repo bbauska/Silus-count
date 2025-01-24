@@ -14,3 +14,11 @@ const showConfetti = () => {
 setInterval(() => {
   showConfetti();
 }, 100);  /* 400 */
+
+const jsConfetti = new JSConfetti();
+
+setInterval(() => {
+  jsConfetti.addConfetti({
+    emojis: ['🥩']
+  })
+}, 2500)
