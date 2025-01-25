@@ -1,4 +1,4 @@
-/* styles.css in silus-count of silus-clicker.bauska.org */
+value/* styles.css in silus-count of silus-clicker.bauska.org */
 body {
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@ h4 {
 #confetti-container {
   position: absolute;
   top: 0;
-  margin-right: 300px;
+  margin-right: 300px;  /* was blank */
   left: 0;
   width: 100%;  /* 100% */
   display: flex;
