@@ -15,6 +15,7 @@ body {
   border-radius: 20px;  /* 10px; */
   box-shadow: 0 0 8px 0 rgb(3, 75, 85);
   margin-top: 100px;  /* 100px */
+  margin-right: 300px;  /* was blank */
 }
 <!-- id -->
 #clicker {
@@ -68,7 +69,6 @@ h4 {
 #confetti-container {
   position: absolute;
   top: 0;
-  margin-right: 300px;  /* was blank */
   left: 0;
   width: 100%;  /* 100% */
   display: flex;
